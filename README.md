@@ -45,19 +45,19 @@ add_action( 'init', function() {
 
 	/**
 	 * First, the "INTERVAL=2" would be applied to "FREQ=YEARLY" to
-     * arrive at "every other year".  Then, "BYMONTH=1" would be applied
-     * to arrive at "every January, every other year".  Then, "BYDAY=SU"
-     * would be applied to arrive at "every Sunday in January, every
-     * other year".  Then, "BYHOUR=8,9" would be applied to arrive at
-     * "every Sunday in January at 8 AM and 9 AM, every other year".
-     * Then, "BYMINUTE=30" would be applied to arrive at "every Sunday in
-     * January at 8:30 AM and 9:30 AM, every other year".  Then, lacking
-     * information from "RRULE", the second is derived from "DTSTART", to
-     * end up in "every Sunday in January at 8:30:00 AM and 9:30:00 AM,
-     * every other year".  Similarly, if the BYMINUTE, BYHOUR, BYDAY,
-     * BYMONTHDAY, or BYMONTH rule part were missing, the appropriate
-     * minute, hour, day, or month would have been retrieved from the
-     * "DTSTART" property.
+	 * arrive at "every other year".  Then, "BYMONTH=1" would be applied
+	 * to arrive at "every January, every other year".  Then, "BYDAY=SU"
+	 * would be applied to arrive at "every Sunday in January, every
+	 * other year".  Then, "BYHOUR=8,9" would be applied to arrive at
+	 * "every Sunday in January at 8 AM and 9 AM, every other year".
+	 * Then, "BYMINUTE=30" would be applied to arrive at "every Sunday in
+	 * January at 8:30 AM and 9:30 AM, every other year".  Then, lacking
+	 * information from "RRULE", the second is derived from "DTSTART", to
+	 * end up in "every Sunday in January at 8:30:00 AM and 9:30:00 AM,
+	 * every other year".  Similarly, if the BYMINUTE, BYHOUR, BYDAY,
+	 * BYMONTHDAY, or BYMONTH rule part were missing, the appropriate
+	 * minute, hour, day, or month would have been retrieved from the
+	 * "DTSTART" property.
 	 */
 	$rule = array(
 		'dtstart'  => '2021-01-03 08:30:00',
@@ -371,7 +371,7 @@ array (size=46)
       'sequence' => int 45
 ```
 
-Results are returned as an array of `dtstart`, `dtend`, `recurrence-id`, and `sequence` parameters:
+Results are returned as an array of `dtstart`, `dtend`, `recurrence-id`, and `sequence` keys:
 
 * Numbers are integers
 * Date/Times are `Y-m-d H:i:s` by default
