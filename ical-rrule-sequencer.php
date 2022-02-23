@@ -2668,7 +2668,7 @@ class Sequence {
 	}
 
 	/**
-	 * Explode a DateTime format by a delimeter, using the DateTime and
+	 * Explode a DateTime format by a delimiter, using the DateTime and
 	 * DateTimeZone.
 	 *
 	 * @param string $format
