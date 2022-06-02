@@ -256,21 +256,21 @@ class Sequence {
 	/**
 	 * DateTimeZone object.
 	 *
-	 * @var DateTimeZone
+	 * @var \DateTimeZone
 	 */
 	protected $timezone;
 
 	/**
 	 * DateTime object.
 	 *
-	 * @var DateTime
+	 * @var \DateTime
 	 */
 	protected $datetime;
 
 	/**
 	 * DateInterval object.
 	 *
-	 * @var DateInterval
+	 * @var \DateInterval
 	 */
 	protected $duration;
 
@@ -2513,7 +2513,6 @@ class Sequence {
 	 *
 	 * These details are internally cached to avoid rework.
 	 *
-	 * @param int $month
 	 * @param int $year
 	 * @return array
 	 */
